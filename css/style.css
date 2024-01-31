@@ -128,3 +128,11 @@ no-padding {
   font-size: 1.8rem;
   color: var(--white);
 }
+
+@media (min-width: 768px) {
+    .container-major {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      column-gap: 4rem;
+    }
+}
