@@ -26,8 +26,9 @@ body {
 /* Globales */
 
 .container {
-  max-width: 128rem;
-  width: 90%;
+  /* max-width: 128rem;
+  width: 90%; */
+  width: min(90%, 120rem); /* Nueva forma para hacer en 1 linea de codigo las dos de arriba */
   margin: 0 auto;
 }
 
@@ -94,6 +95,10 @@ img {
     .header__text {
       margin-top: 15rem;
     }
+}
+
+.bar {
+  padding-top: 4rem;
 }
 
 @media (min-width: 768px) {
@@ -201,4 +206,10 @@ img {
 .widget-course__label,
 .widget-course__info {
   font-size: 2rem;
+}
+
+.footer {
+  background-color: var(--black);
+  padding-bottom: 3rem;
+  margin-top: 4rem;
 }
