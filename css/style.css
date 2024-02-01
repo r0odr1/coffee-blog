@@ -1,6 +1,6 @@
 :root {
-  --fontHeading: 'PT Sans', sans-serif;
-  --fontParragraph: 'PT Sans', sans-serif;
+  --fontHeading: "PT Sans", sans-serif;
+  --fontParragraph: "PT Sans", sans-serif;
 
   --primary: #784d3c;
   --grey: #e1e1e1;
@@ -13,7 +13,9 @@ html {
   font-size: 62.5%; /* 1rem = 10px */
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -28,7 +30,10 @@ body {
 .container {
   /* max-width: 128rem;
   width: 90%; */
-  width: min(90%, 120rem); /* Nueva forma para hacer en 1 linea de codigo las dos de arriba */
+  width: min(
+    90%,
+    120rem
+  ); /* Nueva forma para hacer en 1 linea de codigo las dos de arriba */
   margin: 0 auto;
 }
 
@@ -36,7 +41,10 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--fontHeading);
   line-height: 1.2;
 }
@@ -92,9 +100,9 @@ img {
 }
 
 @media (min-width: 768px) {
-    .header__text {
-      margin-top: 15rem;
-    }
+  .header__text {
+    margin-top: 15rem;
+  }
 }
 
 .bar {
@@ -102,16 +110,15 @@ img {
 }
 
 @media (min-width: 768px) {
-    .bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  .bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .logo {
   color: var(--white);
-
 }
 
 .logo__name {
@@ -123,10 +130,10 @@ img {
 }
 
 @media (min-width: 768px) {
-    .navigation {
-      display: flex;
-      gap: 2rem;
-    }
+  .navigation {
+    display: flex;
+    gap: 2rem;
+  }
 }
 
 .navigation__link {
@@ -137,11 +144,11 @@ img {
 }
 
 @media (min-width: 768px) {
-    .container-major {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      column-gap: 4rem;
-    }
+  .container-major {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+  }
 }
 
 .entrance {
@@ -164,12 +171,17 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 2rem;
+  border: none;
 }
 
 @media (min-width: 768px) {
-    .button {
-      display: inline-block;
-    }
+  .button {
+    display: inline-block;
+  }
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 .button--primary {
@@ -217,11 +229,11 @@ img {
 /* Nosotros */
 
 @media (min-width: 768px) {
-    .about-us {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 2rem;
-    }
+  .about-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
 }
 
 /* Curso */
@@ -232,11 +244,11 @@ img {
 }
 
 @media (min-width: 768px) {
-    .course {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      column-gap: 2rem;
-    }
+  .course {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+  }
 }
 
 .course:last-of-type {
@@ -255,4 +267,40 @@ img {
 .course__label,
 .course__info {
   font-size: 2rem;
+}
+
+/* Contacto */
+
+.contact-bg {
+  background-image: url(../img/contacto.jpg);
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form {
+  background-color: var(--white);
+  margin: -5rem auto 0 auto;
+  width: 95%;
+  padding: 5rem;
+}
+
+.campo {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.campo__label {
+  flex: 0 0 9rem;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.campo__field {
+  flex: 1;
+  border: 1px solid var(--grey);
+}
+
+.campo__field--textarea {
+  height: 20rem;
 }

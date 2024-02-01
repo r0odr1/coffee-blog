@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlogDeCafé</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="bar">
+          <a class="logo" href="index.html">
+            <h1 class="logo__name no-margin center-text">
+              Blog<span class="logo__bold">DeCafé</span>
+            </h1>
+          </a>
+          <nav class="navigation">
+            <a href="about.html" class="navigation__link">Nosotros</a>
+            <a href="courses.html" class="navigation__link">Cursos</a>
+            <a href="contact.html" class="navigation__link">Contacto</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="header__text">
+        <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+        <p class="no-margin">
+          Aprende de los expertos con las mejores recetas y concejos
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <h3 class="center-text">Contacto</h3>
+
+      <div class="contact-bg"></div>
+
+      <form class="form">
+        <div class="campo">
+          <label class="campo__label" for="name">Nombre</label>
+          <input class="campo__field" type="text" placeholder="Tu Nombre" id="name" />
+        </div>
+        <div class="campo">
+          <label class="campo__label" for="email">E-mail</label>
+          <input class="campo__field" type="email" placeholder="Tu E-mail" id="email" />
+        </div>
+        <div class="campo">
+          <label class="campo__label" for="message">Mensaje</label>
+          <textarea class="campo__field campo__field--textarea" id="message"></textarea>
+        </div>
+        <div class="campo">
+          <input type="submit" value="Enviar" class="button button--primary" />
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="bar">
+          <a class="logo" href="index.html">
+            <h1 class="logo__name no-margin center-text">
+              Blog<span class="logo__bold">DeCafé</span>
+            </h1>
+          </a>
+          <nav class="navigation">
+            <a href="about.html" class="navigation__link">Nosotros</a>
+            <a href="courses.html" class="navigation__link">Cursos</a>
+            <a href="contact.html" class="navigation__link">Contacto</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
