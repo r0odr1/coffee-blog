@@ -40,3 +40,7 @@ Café Bloog presenta una interfaz limpia y moderna, ideal para compartir artícu
    ```bash
    
    git clone https://github.com/tu_usuario/cafebloog.git
+
+## 👤 Authors
+
+This project was created by [r0odr1](https://github.com/r0odr1).
